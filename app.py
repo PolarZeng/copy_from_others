@@ -10,6 +10,9 @@ model = pickle.load(open('model.pkl', 'rb'))
 def index():
     return render_template('index.html')
 
+'''
+opo
+'''
 
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
@@ -26,3 +29,5 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
